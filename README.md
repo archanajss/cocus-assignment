@@ -1,2 +1,1 @@
-# cocus-assignment
-QA assignment for Cocus
+# QA assignment for COCUS
