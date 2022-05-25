@@ -1,15 +1,15 @@
 # QA assignment for COCUS
 
-## Prerequisites
-Install prerequisites using requirements file
+## Task 1 – RESTful API tests
+### Prerequisites
+Install prerequisites using requirements file by running this command from `task1` directory
 ```
 $ pip3 install -r requirements.txt
 ```
 
-## Task 1 – RESTful API tests
-For runnning tests of tasks 1
+### Run tests
+For runnning tests of tasks 1, run the command from `task1/tests` folder
 ```
-$ cd task1/tests
 $ pytest -s .
 ```
 
