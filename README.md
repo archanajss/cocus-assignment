@@ -24,11 +24,6 @@ Tests should run successfully generating the test output
 ```
 $ docker pull localstack/localstack
 ```
-* Install awscli-local (a thin wrapper around aws-cli for LocalStack)
-```
-$ pip3 install awscli-local
-```
-
 * Start LocalStack in docker container using command
 ```
 $ localstack start -d
@@ -92,9 +87,21 @@ $ localstack status services
 
 * Create an SQS queue on LocalStack named "cars"
 ```
-$ awslocal sqs create-queue --queue-name cars
+$ aws --endpoint-url=http://localhost:4566 sqs create-queue --queue-name cars
 {
     "QueueUrl": "http://localhost:4566/000000000000/cars"
 }
+
 ```
 
+* Configure aws using command
+```
+$ aws configure
+AWS Access Key ID [None]: <your_secret_id>
+AWS Secret Access Key [None]: <your_secret_key>
+Default region name [None]: us-east-1
+Default output format [None]: json
+```
+
+### Run tests
+* 
