@@ -29,7 +29,6 @@ $ docker pull localstack/localstack
 $ pip3 install awscli-local
 ```
 
-### Start LocalStack in docker container
 * Start LocalStack in docker container using command
 ```
 $ localstack start -d
@@ -91,8 +90,7 @@ $ localstack status services
 └──────────────────────────┴─────────────┘
 ```
 
-### Create SQS queue on LocalStack
-Create an SQS queue on LocalStack named "cars"
+* Create an SQS queue on LocalStack named "cars"
 ```
 $ awslocal sqs create-queue --queue-name cars
 {
