@@ -2,7 +2,9 @@
 
 ## Prerequisites
 Install prerequisites using requirements file
-`$ pip3 install -r requirements.txt`
+```
+$ pip3 install -r requirements.txt
+```
 
 ## Task 1
 For runnning tests in tasks 1
