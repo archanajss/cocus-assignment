@@ -18,19 +18,19 @@ Tests should run successfully generating the test output
 
 ## Task 2 - Stream processing test
 ### Setup
-* Install Docker Desktop
-* Install aws-cli
+* Install Docker Desktop from Docker
+* Install aws-cli from AWS
 * Pull LocalStack image
 ```
 $ docker pull localstack/localstack
 ```
-* Install awscli-local
+* Install awscli-local (a thin wrapper around aws-cli for LocalStack)
 ```
 $ pip3 install awscli-local
 ```
 
 ### Start LocalStack in docker container
-Start LocalStack in docker container using command
+* Start LocalStack in docker container using command
 ```
 $ localstack start -d
 
@@ -49,7 +49,7 @@ $ localstack start -d
 [22:06:00] detaching
 ```
 
-Query status of respective services on LocalStack by running
+* Query status of respective services on LocalStack by running
 ```
 $ localstack status services
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
