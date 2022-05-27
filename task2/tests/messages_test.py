@@ -28,6 +28,7 @@ class SQSMessageTest(TestCase):
         messages = response.get('Messages', [])
         for i,message in enumerate(messages):
             car = loads(message['Body'])
+            # assert against the brand names that we created
             self.assertIn(car['brand_name'], self.__car_brands)
             delete_message(message['ReceiptHandle'])
 
@@ -39,6 +40,7 @@ class SQSMessageTest(TestCase):
                 number_of_doors=4, 
                 sports_car=False
             )
+            # add brandname to a list for later assertion
             self.__car_brands.append(car.brand_name);
             json_car = dumps(dataclasses.asdict(car))
             response = send_message(json_car)
