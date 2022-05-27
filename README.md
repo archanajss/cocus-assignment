@@ -104,4 +104,9 @@ Default output format [None]: json
 ```
 
 ### Run tests
-* 
+For runnning tests of tasks 2, run the command from `task2/tests` folder
+```
+$ pytest -s .
+```
+
+Tests should run successfully generating the test output
